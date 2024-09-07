@@ -44,7 +44,7 @@ const DotNavigation = () => {
     }, []);
 
     return (
-        <div className="hidden md:flex fixed top-1/2 right-8 transform -translate-y-1/2 z-50 flex-col items-center space-y-4">
+        <div className="hidden md:flex fixed top-1/2 right-4 transform -translate-y-1/2 z-50 flex-col items-center space-y-4">
             {["hero", "about", "experience", "projects"].map((sectionId) => (
                 <button
                     key={sectionId}
