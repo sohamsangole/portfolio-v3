@@ -17,8 +17,8 @@ const HeroSection = () => {
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-3xl lg:leading-normal font-semibold">
             Hello! : )
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-3xl">
-            I’m a developer who leverages technology to create impactful products. With a passion for innovation and a touch of independent research, I turn complex challenges into practical, user-centered solutions.
+          <p className="text-white text-base sm:text-lg mb-6 lg:text-3xl">
+            I’m <strong>Soham Sangole</strong>, a developer who leverages technology to create impactful products. With a passion for innovation and a touch of independent research, I turn complex challenges into practical, user-centered solutions.
           </p>
           <div className="flex flex-col mt-4 sm:flex-row items-center sm:items-start justify-center sm:justify-center sm:space-x-8 space-y-6 sm:space-y-0">
             <Link
