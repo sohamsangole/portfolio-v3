@@ -51,7 +51,7 @@ const ParticleBackground = () => {
                 connect: { // Settings for connect mode
                   distance: 800, // Radius around mouse to connect particles
                   lineLinked: {
-                    opacity: 0.5,
+                    opacity: 1,
                     width: 1,
                   },
                   radius: 200, // How far the connection lines should reach
@@ -87,7 +87,7 @@ const ParticleBackground = () => {
                 value: 50,
               },
               opacity: {
-                value: 0.5,
+                value: 1,
               },
               shape: {
                 type: "circle",

@@ -2,7 +2,7 @@ export const lightTheme = {
     background: '#ffffff',
     text: '#000000',
     dots: '#121212',
-    primary_color: '#03045e',
+    primary_color: '#0E86CC',
 };
 
 export const darkTheme = {
