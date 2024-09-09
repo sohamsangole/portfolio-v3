@@ -1,6 +1,8 @@
 "use client";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { ThemeContext } from "../context/ThemeContext";
+import { useContext } from "react";
 
 const experiences = [
     {
@@ -51,6 +53,7 @@ const experiences = [
 
 const Experience = () => {
     const ref = useRef(null);
+    const { theme } = useContext(ThemeContext);
     const isInView = useInView(ref, { threshold: 0.1 });
 
     const experienceVariants = {
@@ -59,11 +62,14 @@ const Experience = () => {
     };
 
     return (
-        <section className="experience-section py-12">
-            <h2 className="text-4xl font-bold text-white mb-8 text-center">Experience</h2>
-            <div className="timeline-container relative" ref={ref}>
+        <section className="py-12" style={{ backgroundColor: `rgba(${parseInt(theme.background.slice(1, 3), 16)}, ${parseInt(theme.background.slice(3, 5), 16)}, ${parseInt(theme.background.slice(5, 7), 16)}, 0.8)` }}>
+            <h2 className="text-4xl font-bold mb-8 text-center" style={{ color: theme.text }}>
+                Experience
+            </h2>
+            <div className="relative" ref={ref}>
                 <div
-                    className="timeline-line absolute md:left-1/2 left-6 transform md:-translate-x-1/2 top-0 w-0.5 bg-white h-full hidden md:block"
+                    className="absolute md:left-1/2 left-6 transform md:-translate-x-1/2 top-0 w-0.5 h-full hidden md:block"
+                    style={{ backgroundColor: theme.text }}
                 ></div>
 
                 {experiences.map((exp, index) => {
@@ -74,27 +80,25 @@ const Experience = () => {
                             initial="initial"
                             animate={isInView ? "animate" : "initial"}
                             transition={{ duration: 1, delay: index * 0.6 }}
-                            className={`timeline-item mb-12 flex items-center ${index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
-                                } flex-col`} // flex-col for mobile, flex-row for desktop
+                            className={`mb-12 flex items-center ${index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"} flex-col`}
                         >
-                            {/* Timeline Marker */}
                             <div
-                                className="timeline-marker w-5 h-5 bg-white rounded-full absolute left-1/2 transform -translate-x-1/2 z-10 hidden md:block"
+                                className="w-5 h-5 rounded-full absolute left-1/2 transform -translate-x-1/2 z-10 hidden md:block"
+                                style={{ backgroundColor: theme.text }}
                             ></div>
 
-                            {/* Experience Content */}
                             <div
-                                className={`timeline-content w-full md:w-5/12 p-6 bg-black bg-opacity-10 hover:bg-opacity-30 rounded-xl text-white relative ${index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"
-                                    }`}
+                                className={`w-full md:w-5/12 p-6 bg-black bg-opacity-10 hover:bg-opacity-30 rounded-xl relative ${index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"}`}
+                                style={{ color: theme.text, borderColor: theme.border }}
                             >
-                                <h3 className="text-xl font-semibold">
+                                <h3 className="text-xl font-semibold" style={{ color: theme.text }}>
                                     {exp.role}{" "}
                                     <span className="text-xl">@ {exp.company}</span>
                                 </h3>
                                 <p className="text-lg">
                                     {exp.duration} • {exp.location}
                                 </p>
-                                <ul className="text-[#ADB7BE] list-disc pl-5 mt-2">
+                                <ul className="list-disc pl-5 mt-2" style={{ color: theme.secondaryText }}>
                                     {exp.bulletPoints.map((point, i) => (
                                         <li key={i}>{point}</li>
                                     ))}

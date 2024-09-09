@@ -1,8 +1,9 @@
-"use client";
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 const projectsData = [
   {
@@ -42,6 +43,7 @@ const projectsData = [
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
+  const { theme } = useContext(ThemeContext);
   const isInView = useInView(ref, { once: true });
 
   const handleTagChange = (newTag) => {
@@ -58,8 +60,8 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+    <section id="projects" style={{ backgroundColor: `rgba(${parseInt(theme.background.slice(1, 3), 16)}, ${parseInt(theme.background.slice(3, 5), 16)}, ${parseInt(theme.background.slice(5, 7), 16)}, 0.8)` }}>
+      <h2 className="text-center text-4xl font-bold mt-4 mb-8 md:mb-12" style={{ color: theme.text }}>
         Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
@@ -67,21 +69,25 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="All"
           isSelected={tag === "All"}
+          theme={theme}
         />
         <ProjectTag
           onClick={handleTagChange}
           name="AI"
           isSelected={tag === "AI"}
+          theme={theme}
         />
         <ProjectTag
           onClick={handleTagChange}
           name="App"
           isSelected={tag === "App"}
+          theme={theme}
         />
         <ProjectTag
           onClick={handleTagChange}
           name="Web"
           isSelected={tag === "Web"}
+          theme={theme}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -94,12 +100,12 @@ const ProjectsSection = () => {
             transition={{ duration: 0.3, delay: index * 0.4 }}
           >
             <ProjectCard
-              key={project.id}
               title={project.title}
               description={project.description}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              theme={theme}
             />
           </motion.li>
         ))}

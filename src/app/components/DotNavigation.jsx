@@ -1,7 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 const DotNavigation = () => {
     const [activeSection, setActiveSection] = useState("hero");
+    const { theme } = useContext(ThemeContext);
 
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
@@ -48,7 +50,16 @@ const DotNavigation = () => {
             {["hero", "about", "experience", "projects"].map((sectionId) => (
                 <button
                     key={sectionId}
-                    className={`w-4 h-4 opacity-40 rounded-full transition-all duration-300 ${activeSection === sectionId ? "bg-[#fae739]" : "bg-white"}`}
+                    style={{
+                        width: '1rem',
+                        height: '1rem',
+                        borderRadius: '50%',
+                        backgroundColor: activeSection === sectionId
+                            ? theme.primary_color
+                            : theme.dots,
+                        opacity: activeSection === sectionId ? 1 : 0.6,
+                        transition: 'all 0.3s',
+                    }}
                     onClick={() => scrollToSection(sectionId)}
                     aria-label={`Scroll to ${sectionId} section`}
                 />

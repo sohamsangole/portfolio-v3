@@ -1,8 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 const ParticleBackground = () => {
+  const { theme } = useContext(ThemeContext);
   const [init, setInit] = useState(false);
 
   // Initialize particles engine
@@ -28,7 +31,7 @@ const ParticleBackground = () => {
           options={{
             background: {
               color: {
-                value: "#121212",
+                value: theme.background,
               },
             },
             fpsLimit: 120,
@@ -57,10 +60,10 @@ const ParticleBackground = () => {
             },
             particles: {
               color: {
-                value: "#ffffff",
+                value: theme.primary_color,
               },
               links: {
-                color: "#fae739",
+                color: theme.primary_color,
                 distance: 250,
                 enable: true,
                 opacity: 0.5,
