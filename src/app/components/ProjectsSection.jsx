@@ -64,7 +64,7 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold mt-4 mb-8 md:mb-12" style={{ color: theme.text }}>
         Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="hidden md:flex text-white flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
           name="All"

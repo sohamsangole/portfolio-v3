@@ -3,11 +3,19 @@ import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, theme }) => {
+  // Determine if the theme is light based on the background color
+  const isLightTheme = theme.background === "#ffffff";
+
   return (
     <div className="relative">
       <div
-        className="h-52 md:h-72 rounded-t-xl relative group overflow-hidden"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}
+        className={`h-52 md:h-72 rounded-t-xl relative group overflow-hidden border-2 transition-all duration-500 ${isLightTheme ? 'border-black' : 'border-0'
+          }`}
+        style={{
+          background: `url(${imgUrl})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       >
         <div
           className="overlay absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 items-center justify-center"
