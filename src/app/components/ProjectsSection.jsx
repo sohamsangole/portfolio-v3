@@ -69,25 +69,21 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="All"
           isSelected={tag === "All"}
-          theme={theme}
         />
         <ProjectTag
           onClick={handleTagChange}
           name="AI"
           isSelected={tag === "AI"}
-          theme={theme}
         />
         <ProjectTag
           onClick={handleTagChange}
           name="App"
           isSelected={tag === "App"}
-          theme={theme}
         />
         <ProjectTag
           onClick={handleTagChange}
           name="Web"
           isSelected={tag === "Web"}
-          theme={theme}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
