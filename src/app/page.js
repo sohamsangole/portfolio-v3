@@ -11,6 +11,7 @@ import ParticleBackground from "./components/ParticleBackground";
 import Experience from "./components/Experience";
 import DotNavigation from "./components/DotNavigation";
 import ToggleButton from "./components/ToggleButton";
+import ContactMe from "./components/ContactMe";
 
 export default function Home() {
   const { theme } = useContext(ThemeContext);
@@ -32,6 +33,9 @@ export default function Home() {
       </div>
       <div id="projects" className="relative z-10 container mx-auto px-12 py-4" >
         <ProjectsSection />
+      </div>
+      <div id="contact" className="relative z-10 container mx-auto px-12 py-4" >
+        <ContactMe />
       </div>
       <Footer />
       <ToggleButton />

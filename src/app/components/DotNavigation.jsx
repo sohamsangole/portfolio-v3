@@ -14,7 +14,7 @@ const DotNavigation = () => {
     };
 
     useEffect(() => {
-        const sections = ["hero", "about", "experience", "projects"];
+        const sections = ["hero", "about", "experience", "projects", "contact"];
         const sectionElements = sections.map((sectionId) =>
             document.getElementById(sectionId)
         );
@@ -47,7 +47,7 @@ const DotNavigation = () => {
 
     return (
         <div className="hidden md:flex fixed top-1/2 right-4 transform -translate-y-1/2 z-50 flex-col items-center space-y-4">
-            {["hero", "about", "experience", "projects"].map((sectionId) => (
+            {["hero", "about", "experience", "projects", "contact"].map((sectionId) => (
                 <button
                     key={sectionId}
                     style={{
