@@ -5,7 +5,7 @@ const Education = () => {
     return (
         <div className="relative shadow-[4px_4px_4px_rgba(0,0,0,0.25)] rounded-[10px] overflow-hidden">
             {/* <div className="text-black font-bold text-[18px] mb-4">Education</div> */}
-            <div className="absolute left-[55px] top-[70px] h-[100%] w-[1px] bg-black -z-10"></div>
+            <div className="absolute left-[55px] top-[0px] h-[100%] w-[1px] opacity-50 bg-black -z-10"></div>
             <div className='p-[20px]'>
                 <div className="flex items-center mb-10 relative">
                     <div className="bg-white">
