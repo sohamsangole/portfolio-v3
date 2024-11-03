@@ -9,14 +9,13 @@
 
 body {
   color: var(--foreground);
-  cursor: url('/cursor.cur') 16 16;
+  /* cursor: none; */
   background: var(--background);
   font-family: var(--font-roboto), sans-serif;
 }
 
 ::-webkit-scrollbar {
   display: none;
-  /* Safari and Chrome */
 }
 
 html {
