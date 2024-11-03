@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import LoadingSpinner from "./LoadingSpinner";
+require('dotenv').config();
+const githubToken = process.env.REACT_APP_GITHUB_TOKEN;
 
 async function fetchContributionGraph(username, token) {
     const query = `
@@ -37,16 +39,15 @@ async function fetchContributionGraph(username, token) {
 export default function ContributionGraph() {
     const [contributionData, setContributionData] = useState(null);
     const username = "sohamsangole";
-    const token = "";
 
     useEffect(() => {
         async function loadData() {
-            const data = await fetchContributionGraph(username, token);
+            const data = await fetchContributionGraph(username, githubToken);
             setContributionData(data);
         }
 
         loadData();
-    }, [username, token]);
+    }, [username]);
 
     if (!contributionData) return <LoadingSpinner />;
 
