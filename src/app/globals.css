@@ -13,3 +13,16 @@ body {
   background: var(--background);
   font-family: var(--font-roboto), sans-serif;
 }
+
+::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+html {
+  -ms-overflow-style: none;
+}
+
+* {
+  scrollbar-width: none;
+}
