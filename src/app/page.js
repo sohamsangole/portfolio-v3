@@ -11,6 +11,7 @@ export default function Home() {
       <NavBar />
       <TopSection />
       <EducationExperience />
+      <div className="h-[500px]"></div>
     </div>
   );
 }
