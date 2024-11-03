@@ -1,0 +1,9 @@
+.cursor {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+}
