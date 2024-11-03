@@ -1,19 +1,25 @@
-import { ThemeProvider } from './context/ThemeContext'
-import './globals.css'
-import { Inter } from 'next/font/google'
+import localFont from "next/font/local";
+import "./globals.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = localFont({
+  src: "./fonts/Roboto-Regular.ttf",
+  variable: "--font-roboto",
+  weight: "400",
+});
 
 export const metadata = {
-  title: 'Soham Sangole',
-}
+  title: "Portfolio | Soham Sangole",
+  description: "Portfolio version 4",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider>{children}</ThemeProvider>
+      <body
+        className={`${roboto.variable} antialiased`}
+      >
+        {children}
       </body>
     </html>
-  )
+  );
 }

@@ -2,75 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-::selection {
-  background-color: #fae739;
-  /* Customize background color */
-  color: #000;
-  /* Customize text color */
-}
-
-::-webkit-selection {
-  background-color: #fae739;
-  /* Customize background color for WebKit browsers */
-  color: #000;
-  /* Customize text color for WebKit browsers */
-}
-
-/* Define the color schemes for light and dark themes */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 255, 255, 255;
-  --primary-color: #1a73e8;
-  --accent-color: #fae739;
-  --shadow-color: rgba(0, 0, 0, 0.0);
-  --transition-duration: 1s;
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  transition: background 2s ease, color 2s ease;
-  box-shadow: 0 4px 8px var(--shadow-color);
-}
-
-/* Add some interesting hover and focus effects */
-a {
-  color: rgb(var(--primary-color));
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-a:hover,
-a:focus {
-  color: rgb(var(--accent-color));
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Smoothly animate changes for other elements */
-button,
-.card {
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-button:hover,
-.card:hover {
-  background-color: rgba(var(--primary-color), 0.1);
-  box-shadow: 0 6px 12px var(--shadow-color);
-}
-
-/* Animation for page load */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
   }
 }
 
 body {
-  animation: fadeIn 2s ease-in;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-roboto), sans-serif;
 }
