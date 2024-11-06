@@ -32,7 +32,6 @@ export default function LoadingSpinner() {
                     marginTop: '16px',
                     fontSize: '18px',
                     color: '#555',
-                    fontFamily: 'Arial, sans-serif',
                 }}>Loading...</p>
             </div>
         </>
