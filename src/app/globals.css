@@ -34,12 +34,12 @@ html {
   background-color: #f4f4f9;
   border-radius: 8px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+  overflow-x: auto;
 }
 
 .week {
   display: flex;
   flex-direction: column;
-  overflow: auto;
 }
 
 .day {
