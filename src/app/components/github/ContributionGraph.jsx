@@ -37,7 +37,7 @@ async function fetchContributionGraph(username, token) {
 export default function ContributionGraph() {
     const [contributionData, setContributionData] = useState(null);
     const username = "sohamsangole";
-    const token = "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";
+    const token = "";
 
     useEffect(() => {
         async function loadData() {

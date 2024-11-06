@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Image from 'next/image';
 
 const TopSection = () => (
-    <div className='py-16 flex items-start'>
+    <div className='py-6 flex items-start'>
         <div className='flex-1'>
             <div className='text-[40px] p-0'>Hi, I am Soham Sangole👋</div>
             <div className='text-[18px] text-[#5F5F5F] pt-0 pb-[8px]'>
@@ -20,7 +20,7 @@ const TopSection = () => (
                     target="_blank"
                     rel="noopener noreferrer"
                     className='bg-white text-black text-[18px] font-bold rounded-[10px] transition-shadow'
-                    style={{ boxShadow: '4px 4px 8px rgba(0, 0, 0, 0.15)' }}
+                    style={{ boxShadow: '0 4px 4px rgba(0, 0, 0, 0.2)' }}
                 >
                     <div className='px-[44px] py-[12px]'>Resume</div>
                 </a>
