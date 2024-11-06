@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Education = () => {
     return (
-        <div className="relative shadow-[4px_4px_4px_rgba(0,0,0,0.25)] rounded-[10px] overflow-hidden">
+        <div className="relative shadow-[4px_4px_8px_rgba(0,0,0,0.15)] rounded-[10px] overflow-hidden">
             {/* <div className="text-black font-bold text-[18px] mb-4">Education</div> */}
             <div className="absolute left-[55px] top-[0px] h-[100%] w-[1px] opacity-50 bg-black -z-10"></div>
             <div className='p-[20px]'>

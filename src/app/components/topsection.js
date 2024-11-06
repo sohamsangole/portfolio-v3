@@ -20,7 +20,7 @@ const TopSection = () => (
                     target="_blank"
                     rel="noopener noreferrer"
                     className='bg-white text-black text-[18px] font-bold rounded-[10px] transition-shadow'
-                    style={{ boxShadow: '0 4px 4px rgba(0, 0, 0, 0.2)' }}
+                    style={{ boxShadow: '4px 4px 8px rgba(0, 0, 0, 0.15)' }}
                 >
                     <div className='px-[44px] py-[12px]'>Resume</div>
                 </a>
