@@ -4,6 +4,7 @@ import EducationExperience from "./components/eduexp";
 import ContributionGraph from "./components/github/ContributionGraph";
 import { NavBar } from "./components/navbar/navbar";
 import TopSection from "./components/topsection";
+import ThreeProjects from "./components/threeProjects";
 
 export default function Home() {
   const [githubToken, setGithubToken] = useState(null);
@@ -18,6 +19,7 @@ export default function Home() {
       <TopSection />
       <ContributionGraph githubToken={githubToken} />
       <EducationExperience />
+      <ThreeProjects />
       <div className="h-[500px]"></div>
     </div>
   );
