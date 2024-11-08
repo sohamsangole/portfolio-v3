@@ -9,11 +9,14 @@ const NavBarComponent = forwardRef((props, ref) => {
             <div className="container py-4 flex justify-start items-center">
                 <ul className="flex space-x-10 text-black font-bold text-[18px]">
                     <li>
-                        <Link href="/projects">Projects</Link>
+                        <Link href="/">Hello !</Link>
                     </li>
                     <li>
-                        <Link href="/">Experience</Link>
+                        <Link href="/projects">Projects</Link>
                     </li>
+                    {/* <li>
+                        <Link href="/">Experience</Link>
+                    </li> */}
                     <li>
                         <Link href="contact">Contact Me</Link>
                     </li>
