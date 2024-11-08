@@ -1,5 +1,7 @@
+"use client";
 import React from 'react'
 import ProjectTile from './projects/projecttile';
+import Link from 'next/link';
 
 const project = [
     {
@@ -28,7 +30,7 @@ const project = [
 const ThreeProjects = () => {
     return (
         <div className="py-6">
-            <div className="text-[24px] font-semibold p-0">Stuff that I&apos;ve built...</div>
+            <div className="text-[24px] font-semibold p-0">📂 Stuff that I&apos;ve built...</div>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {project.map((item, index) => (
                     <ProjectTile
@@ -41,6 +43,14 @@ const ThreeProjects = () => {
                     />
                 ))}
             </div>
+            <div className="mt-8 text-center">
+                <Link href="/projects">
+                    <div className="text-white bg-blue-500 hover:bg-blue-700 py-2 px-6 rounded-lg max-w-max mx-auto">
+                        View More Projects...
+                    </div>
+                </Link>
+            </div>
+
         </div>
     );
 };
