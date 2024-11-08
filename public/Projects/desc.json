@@ -1,0 +1,23 @@
+[
+    {
+        "image": "/Projects/p3/image.png",
+        "type": "Deep Learning",
+        "name": "Image Reconstruction with AutoEncoder",
+        "githubLink": "https://github.com/sohamsangole/mnist-reconstruction-using-autoencoder",
+        "desc": "This project demonstrates image reconstruction using an AutoEncoder model on the MNIST dataset. The AutoEncoder compresses input images into a smaller latent space and then reconstructs the original image."
+    },
+    {
+        "image": "/Projects/p2/image.png",
+        "type": "Reinforcement Learning",
+        "name": "Ping Pong Game",
+        "githubLink": "https://github.com/sohamsangole/Ping-Pong-Game-Reinforcement-Learning",
+        "desc": "A Reinforcement Learning-based Pong game built with Python, where an AI agent learns to play and improve through Deep Q-Networks."
+    },
+    {
+        "image": "/Projects/p1/image.png",
+        "type": "Machine Learning",
+        "name": "University Probability Predictor",
+        "githubLink": "https://github.com/sohamsangole/University-Probability-Predictor",
+        "desc": "University Probability Predictor is a web-based machine learning model that analyzes input features like GPA, test scores, extracurriculars, and more to estimate the probability of acceptance into a specific university."
+    }
+]
