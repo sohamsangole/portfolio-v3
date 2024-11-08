@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import Link from 'next/link';
 import styles from "./style.module.scss";
 
 const NavBarComponent = forwardRef((props, ref) => {
@@ -8,13 +9,13 @@ const NavBarComponent = forwardRef((props, ref) => {
             <div className="container py-4 flex justify-start items-center">
                 <ul className="flex space-x-10 text-black font-bold text-[18px]">
                     <li>
-                        <a ref={ref} className={styles.navItem} href="#projects">Projects</a>
+                        <Link href="/projects">Projects</Link>
                     </li>
                     <li>
-                        <a href="#experience">Experience</a>
+                        <Link href="/">Experience</Link>
                     </li>
                     <li>
-                        <a href="#contactme">Contact Me</a>
+                        <Link href="contact">Contact Me</Link>
                     </li>
                 </ul>
             </div>
