@@ -14,7 +14,7 @@ const TopSection = () => (
             <div className='text-[18px]'>
                 <span>I learn new things by building stuff.</span>
                 <br />
-                <span>When I am not coding, I am mostly listening to music <Link href="/currently-playing">🎵</Link>.</span>
+                <span>When I am not coding, I am mostly listening to music <Link href="/music">🎵</Link>.</span>
             </div>
             <div className='flex items-center mt-[30px]'>
                 <a
