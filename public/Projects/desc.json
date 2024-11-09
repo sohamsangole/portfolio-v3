@@ -14,6 +14,13 @@
         "desc": "A Reinforcement Learning-based Pong game built with Python, where an AI agent learns to play and improve through Deep Q-Networks."
     },
     {
+        "image": "/Projects/p4/image.png",
+        "type": "Mobile App",
+        "name": "Project f2",
+        "githubLink": "https://github.com/sohamsangole/project-f2",
+        "desc": "A mobile application that connects to Spotify, fetches real-time data such as currently playing song, user's top songs & artists and displays it in the interface for enhanced user experience."
+    },
+    {
         "image": "/Projects/p1/image.png",
         "type": "Machine Learning",
         "name": "University Probability Predictor",
