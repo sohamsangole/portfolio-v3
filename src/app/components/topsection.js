@@ -1,6 +1,8 @@
+"use client";
 import { React, forwardRef } from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const TopSection = () => (
     <div className='py-16 flex items-start'>
@@ -12,7 +14,7 @@ const TopSection = () => (
             <div className='text-[18px]'>
                 <span>I learn new things by building stuff.</span>
                 <br />
-                <span>When I am not coding, I am mostly listening to music 🎵.</span>
+                <span>When I am not coding, I am mostly listening to music <Link href="/currently-playing">🎵</Link>.</span>
             </div>
             <div className='flex items-center mt-[30px]'>
                 <a
