@@ -1,12 +1,16 @@
-import React from 'react'
-import Music from '../components/music'
+"use client";
+import dynamic from 'next/dynamic';
 
-const page = () => {
+const Music = dynamic(() => import('../components/music'), {
+    ssr: false,
+});
+
+const Page = () => {
     return (
         <>
             <Music />
         </>
-    )
-}
+    );
+};
 
-export default page
+export default Page;
