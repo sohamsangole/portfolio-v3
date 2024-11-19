@@ -15,7 +15,7 @@ export default function Home() {
     setGithubToken(token);
   }, []);
   return (
-    <div className="w-[50%] mx-auto py-4">
+    <div className="w-[80%] sm:w-[55%] mx-auto py-4">
       <NavBar />
       <TopSection />
       <ContributionGraph githubToken={githubToken} />
