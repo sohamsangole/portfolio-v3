@@ -14,12 +14,6 @@ const NavBarComponent = forwardRef((props, ref) => {
                     <li>
                         <Link href="/projects">Projects</Link>
                     </li>
-                    {/* <li>
-                        <Link href="/">Experience</Link>
-                    </li> */}
-                    <li>
-                        <Link href="contact">Contact Me</Link>
-                    </li>
                 </ul>
             </div>
         </nav>
