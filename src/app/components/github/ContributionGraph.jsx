@@ -77,7 +77,7 @@ export default function ContributionGraph({ githubToken }) {
       <div className="w-full max-w-screen-sm bg-white shadow-lg rounded-lg p-4">
         <div className="text-center mb-4">
           {/* <h2 className="text-xl font-semibold">GitHub Contribution Graph</h2> */}
-          <p className="text-sm text-gray-600">Showing my contributions over the past 60 days</p>
+          <p className="text-sm text-gray-600">Showing my contributions over the past 2 months</p>
           <p className="mt-2 text-lg">
             Total Contributions: <span className="font-bold text-blue-600">{totalContributions}</span>
           </p>
