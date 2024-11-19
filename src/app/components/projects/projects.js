@@ -13,9 +13,9 @@ export const Projects = () => {
     }, []);
 
     return (
-        <div className='py-16'>
-            <div className='text-[20px] font-bold p-0 mb-8'>What I’ve Built:</div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className='py-16 px-4 sm:px-6 md:px-8'>
+            <div className='text-[24px] font-bold mb-8 text-center sm:text-left'>What I’ve Built:</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, index) => (
                     <ProjectTile
                         key={index}
