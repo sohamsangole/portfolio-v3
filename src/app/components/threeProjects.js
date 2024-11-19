@@ -29,8 +29,8 @@ const project = [
 
 const ThreeProjects = () => {
     return (
-        <div className="py-6">
-            <div className="text-[24px] font-semibold p-0">📂 Stuff that I&apos;ve built...</div>
+        <div className="py-6 px-4 sm:px-6 md:px-8">
+            <div className="text-[24px] font-semibold text-center sm:text-left">📂 Stuff that I&apos;ve built...</div>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {project.map((item, index) => (
                     <ProjectTile
@@ -50,9 +50,8 @@ const ThreeProjects = () => {
                     </div>
                 </Link>
             </div>
-
         </div>
     );
 };
 
-export default ThreeProjects
+export default ThreeProjects;
