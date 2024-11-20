@@ -1,5 +1,12 @@
 [
     {
+        "image": "/Projects/p5/image.png",
+        "type": "Task Management App",
+        "name": "TaskFlow",
+        "githubLink": "https://github.com/sohamsangole/taskflow.git",
+        "desc": "TaskFlow is a productivity-focused app built with Flutter, designed to help users efficiently manage and track their tasks with ease."
+    },
+    {
         "image": "/Projects/p3/image.png",
         "type": "Deep Learning",
         "name": "Image Reconstruction with AutoEncoder",
