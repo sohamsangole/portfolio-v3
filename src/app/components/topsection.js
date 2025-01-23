@@ -28,7 +28,7 @@ const TopSection = () => (
                 <span>I learn new things by building stuff.</span>
                 <br />
                 <span>
-                    When I am not coding, I am mostly listening to music <Link href="/music">🎵</Link>.
+                    When I am not coding, I am mostly listening to music <Link href="https://open.spotify.com/playlist/4H79kjiAO7RtA8FNaOCTCW?si=i5Xj7tUBQnWKeofhQ3NpFQ">🎵</Link>.
                 </span>
             </div>
 
