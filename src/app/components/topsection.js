@@ -21,7 +21,7 @@ const TopSection = () => (
             <div className='text-[40px] p-0'>Hi, I am Soham Sangole&nbsp;👋</div>
 
             <div className='text-[18px] text-[#5F5F5F] pt-0 pb-[8px]'>
-                21 years old software developer from <strong>Mumbai,&nbsp;India</strong>
+                22 years old software developer from <strong>Mumbai,&nbsp;India</strong>
             </div>
 
             <div className='text-[18px]'>

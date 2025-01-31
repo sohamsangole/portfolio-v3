@@ -8,8 +8,8 @@ const roboto = localFont({
 });
 
 export const metadata = {
-  title: "Portfolio | Soham Sangole",
-  description: "Portfolio version 4",
+  title: "Soham Sangole ; )",
+  description: "Portfolio Version 4",
 };
 
 export default function RootLayout({ children }) {
